@@ -226,7 +226,7 @@ nav,
     border: none;
     background-color: rgb(233, 45, 139);
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
 }
