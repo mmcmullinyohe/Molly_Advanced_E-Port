@@ -145,6 +145,7 @@ h1, h2 {
   padding-left: 22px;
   font-size: 15px;
   opacity: 0.95;
+  color: #111;
 }
 
 .service__list li::before {
@@ -154,6 +155,7 @@ h1, h2 {
   top: 0;
   font-weight: 900;
   opacity: 0.85;
+  color: rgb(233, 45, 139);
 }
 
 .service__cta {
@@ -176,8 +178,10 @@ h1, h2 {
 /* ========== ADD-ONS ========== */
 
 .services__extras {
-  margin-top: 44px;
-  margin-bottom: 80px;
+  background: rgba(255, 105, 180, 0.04);
+  padding: 32px 16px;
+  border-radius: 20px;
+  margin-bottom: 48px;
 }
 
 .extras__grid {
@@ -199,10 +203,15 @@ h1, h2 {
   box-shadow: 0 6px 18px rgba(0,0,0,0.05);
 }
 
+.extra__item::after {
+  content: " +";
+  opacity: 0.5;
+}
+
 /* ========== PROCESS (CHECKLIST) ========== */
 
 .services__processes {
-  margin-top: 50px;
+  margin-top: 32px;
   padding-top: 24px;
 }
 
@@ -218,6 +227,79 @@ h1, h2 {
   max-width: 760px;
   margin: 6px auto 0;
 }
+
+.processes li {
+  background: #fff;
+  padding: 14px 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  max-width: 420px;
+  width: 100%;
+}
+
+/* ========== FINAL CTA ========== */
+
+.final__cta {
+  background: linear-gradient(135deg, rgba(255,105,180,0.15), rgba(255,105,180,0.05));
+  padding: 48px 24px;
+  text-align: center;
+  border-radius: 24px;
+  margin-top: 48px;
+}
+
+/* ========== DARK MODE ========== */
+
+body.dark-theme section {
+  background-color: #111;
+}
+
+body.dark-theme p,
+body.dark-theme .services__para,
+body.dark-theme .section__para {
+  color: #ffffff;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme .section__title,
+body.dark-theme .services_title {
+  color: rgb(233, 45, 139);
+}
+
+/* Keep text visible inside white cards */
+body.dark-theme .service__card,
+body.dark-theme .service__card * {
+  color: #111;
+}
+
+/* Invert add-on pills (dark) */
+body.dark-theme .extra__item {
+  background: #1f1f1f;
+  border-color: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+/* Process items stay readable (white cards) */
+body.dark-theme .processes li {
+  color: #111;
+}
+
+
+/* DARK MODE: make How it Works readable */
+body.dark-theme .processes li {
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+body.dark-theme .processes li b {
+  color: rgb(233, 45, 139);
+}
+
+body.dark-theme .processes {
+  color: #fff;
+}
+
 
 /* ========== RESPONSIVE ========== */
 
