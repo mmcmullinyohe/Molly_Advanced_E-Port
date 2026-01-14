@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="icon" type="image/png" href="./assets/MM_logo_simple.png" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <script
+      src="https://kit.fontawesome.com/6c66317fd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Bh8Ce6IH2ELec4_B7",
+      });
+   })();
+</script>
+  </head>
+  <body>
+    <section id="landing-page">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/MM_logo_simple.png" />
+        </figure>
+        <figure>
+          <img src="" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+                      <li class="nav__link">
+            <a
+              href="./index.html"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Home
+            </a>
+          </li>
+
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact
+            </a>
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="services">
+  <div class="container">
+    <div class="row">
+      <h2 class="section__title">Packages</h2>
+      <p class="section__para">
+        Pick a package below, or message me for a custom quote.
+      </p>
+
+      <div class="services__grid">
+        <div class="service__card">
+          <h3 class="service__name">Starter Landing Page</h3>
+          <p class="service__tagline">Best for a simple online presence.</p>
+          <p class="service__price">Starting at $200</p>
+          <ul class="service__list">
+            <li>1 scrolling page (up to 5 sections)</li>
+            <li>Mobile responsive layout</li>
+            <li>Contact form or email link</li>
+            <li>1 revision round</li>
+            <li>Deployed live</li>
+          </ul>
+          <button class="service__cta click" onclick="toggleModal()">Request Starter</button>
+        </div>
+
+        <div class="service__card service__card--featured">
+          <h3 class="service__name">Business Website</h3>
+          <p class="service__tagline">Best for small businesses and services.</p>
+          <p class="service__price">Starting at $800</p>
+          <ul class="service__list">
+            <li>3–5 pages (Home, About, Services, Contact)</li>
+            <li>Mobile responsive + consistent styling</li>
+            <li>Contact form</li>
+            <li>Basic SEO structure</li>
+            <li>2 revision rounds</li>
+          </ul>
+          <button class="service__cta click" onclick="toggleModal()">Request Business Site</button>
+        </div>
+
+        <div class="service__card">
+          <h3 class="service__name">Custom React Build</h3>
+          <p class="service__tagline">Best for web apps and dynamic UI.</p>
+          <p class="service__price">Custom Quote</p>
+          <ul class="service__list">
+            <li>React UI + reusable components</li>
+            <li>API integrations (if needed)</li>
+            <li>Performance + UX focused</li>
+            <li>Custom features based on scope</li>
+          </ul>
+          <button class="service__cta click" onclick="toggleModal()">Request a Quote</button>
+        </div>
+      </div>
+
+      <div class="services__extras">
+        <h2 class="section__title">Add-ons</h2>
+        <div class="extras__grid">
+          <div class="extra__item">Additional page</div>
+          <div class="extra__item">Monthly maintenance</div>
+          <div class="extra__item">API integration</div>
+        </div>
+      </div>
+
+      <div class="services__process">
+        <h2 class="section__title">How it Works</h2>
+        <div class="processes">
+          <div class="process__step"><b>1.</b> Message me</div>
+          <div class="process__step"><b>2.</b> Plan + build</div>
+          <div class="process__step"><b>3.</b> Review</div>
+          <div class="process__step"><b>4.</b> Launch</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      </a>
+      
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Front-End Web Developer</h4>
+          <p class="modal__para">
+            I'm a <b class="pink">front-end web developer </b>with a background in <b class="pink">education, data analytics, and 
+            information technology</b>. I love creating and building responsive and performant web applications 
+            that focus on a great user experience for businesses and product teams.
+            <br>
+            I would love to speak with you more about what I can do for you and your business!
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/HTML5_Badge.svg.png">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/CSS_no_bg.png">
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/JavaScript-logo.png">
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/Logo-Power-BI-removebg-preview.png">
+              <span class="language__name">Power BI</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/firebase.png">
+              <span class="language__name">Firebase</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/react-3-1175109.webp">
+              <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'd love to hear from you.
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label" >Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+
+            <div class="form__item">
+              <label class="form__item--label" >E-Mail</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+
+            <div class="form__item">
+              <label class="form__item--label" >Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! I look forward to speaking with you soon. 
+          </div>
+        </div>
+      </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  background-color: rgb(245, 245, 245);
+  transition: all 300ms ease;
+}
+
+h1, h2 {
+  color: rgb(233, 45, 139);
+}
+
+/* ========== SERVICES PAGE LAYOUT ========== */
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.row {
+  width: 100%;
+}
+
+.services_title {
+  margin-bottom: 12px;
+}
+
+.services__para {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 48px 0 12px;
+}
+
+.section__para {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  opacity: 0.9;
+}
+
+/* ========== CARDS GRID ========== */
+
+#services {
+  padding: 48px 0 72px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.service__card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+}
+
+.service__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.10);
+  border-color: rgba(0,0,0,0.12);
+}
+
+.service__card--featured {
+  border: 2px solid rgba(255, 105, 180, 0.55);
+  box-shadow: 0 14px 40px rgba(255, 105, 180, 0.12);
+  transform: translateY(-2px);
+}
+
+.service__name {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.service__tagline {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+
+.service__price {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.service__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding-left: 0;
+}
+
+.service__list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+.service__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 900;
+  opacity: 0.85;
+}
+
+.service__cta {
+  margin-top: auto;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 700;
+  font-size: 15px;
+  background: rgba(255, 105, 180, 0.18);
+  transition: transform 150ms ease, background 150ms ease;
+}
+
+.service__cta:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 105, 180, 0.26);
+}
+
+/* ========== ADD-ONS ========== */
+
+.services__extras {
+  margin-top: 44px;
+  margin-bottom: 80px;
+}
+
+.extras__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, max-content));
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.extra__item {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 999px;
+  padding: 10px 14px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.95;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* ========== PROCESS (CHECKLIST) ========== */
+
+.services__processes {
+  margin-top: 50px;
+  padding-top: 24px;
+}
+
+.services__processes .section__title {
+  margin-bottom: 16px;
+}
+
+.processes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 760px;
+  margin: 6px auto 0;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1024px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service__card {
+    min-height: unset;
+  }
+
+  .extras__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section__title {
+    font-size: 26px;
+  }
+
+  .extras__grid {
+    grid-template-columns: 1fr;
+  }
+}
